@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css/style.css">
+    <title>Formulario de Contato</title>
+</head>
+
+<body>
+<div class="container text-center mt-3">
+    <h1>Como enviar um formulario para o email?</h1>
+    
+   <div class='alert invisible alert-success' role= 'alert' ></div>
+    <form class="d-flex justify-content-center align-items-center flex-column formedles" action="enviar.php" method="POST" >
+    <label > Nome</label>
+    <input type="text" name="nome" id="nome">
+
+    <label > Email</label>
+    <input type="text" name="email" id="email">
+
+    <label > Assunto</label>
+    <input type="text" name="assunto" id="assunto">
+
+    <label >Mensagem</label>
+    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Enviar mensagem">
+    </form>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
